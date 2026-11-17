@@ -1,0 +1,6 @@
+data/
+__pycache__/
+.ipynb_checkpoints/
+export_*.zip
+results/cache/
+*.docx

@@ -1,0 +1,16 @@
+{
+  "max_epochs": 150,
+  "early_stopping_patience": 15,
+  "early_stopping_min_delta": 0.0,
+  "early_stopping_monitor": "internal validation BCE loss (mode=min)",
+  "restore_best_weights": true,
+  "early_stop_fraction": 0.15,
+  "scheduler": {"name": "ReduceLROnPlateau", "mode": "min", "factor": 0.5, "patience": 5, "min_lr": 1e-05},
+  "sgd_momentum": 0.9,
+  "loss": "BCEWithLogitsLoss",
+  "hp_selection_metric": "average_precision_score (inner CV mean)",
+  "threshold": 0.5,
+  "n_outer_folds": 3,
+  "n_inner_folds": 3,
+  "device": "cpu"
+}

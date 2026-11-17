@@ -1,0 +1,123 @@
+{
+  "_note": "Dış CV sonuçları görülmeden önce sabitlendi. Tek-faktör kontrollü: her aday M1'den yalnızca bir faktörle ayrılır.",
+  "common_defaults": {
+    "optimizer": "adamw",
+    "hidden_layers": [
+      32
+    ],
+    "activation": "relu",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "scaler": "standard",
+    "dropout": 0.0,
+    "clipping": false,
+    "scheduler": true,
+    "cat_unknown": "category"
+  },
+  "candidates": [
+    {
+      "id": "M1",
+      "optimizer": "adamw",
+      "hidden_layers": [
+        32
+      ],
+      "activation": "relu",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "scaler": "standard",
+      "dropout": 0.0,
+      "clipping": false,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Temel manuel konfigürasyon"
+    },
+    {
+      "id": "M2",
+      "optimizer": "adam",
+      "hidden_layers": [
+        32
+      ],
+      "activation": "relu",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "scaler": "standard",
+      "dropout": 0.0,
+      "clipping": false,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Optimizer etkisi (AdamW -> Adam)"
+    },
+    {
+      "id": "M3",
+      "optimizer": "sgd",
+      "hidden_layers": [
+        32
+      ],
+      "activation": "relu",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "scaler": "standard",
+      "dropout": 0.0,
+      "clipping": false,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Optimizer etkisi (AdamW -> SGD+Momentum 0.9)"
+    },
+    {
+      "id": "M4",
+      "optimizer": "adamw",
+      "hidden_layers": [
+        32
+      ],
+      "activation": "relu",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "scaler": "minmax",
+      "dropout": 0.0,
+      "clipping": false,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Ölçekleme etkisi (Standard -> MinMax)"
+    },
+    {
+      "id": "M5",
+      "optimizer": "adamw",
+      "hidden_layers": [
+        64,
+        32
+      ],
+      "activation": "relu",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "scaler": "standard",
+      "dropout": 0.0,
+      "clipping": false,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Mimari etkisi ((32,) -> (64,32))"
+    },
+    {
+      "id": "M6",
+      "optimizer": "adamw",
+      "hidden_layers": [
+        32
+      ],
+      "activation": "relu",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "scaler": "standard",
+      "dropout": 0.0,
+      "clipping": false,
+      "scheduler": false,
+      "cat_unknown": "category",
+      "purpose": "Learning-rate-drop etkisi (scheduler kapalı)"
+    }
+  ]
+}
