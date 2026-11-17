@@ -22,7 +22,7 @@ Temel seed = öğrenci numarasının son 5 hanesi + 2026 (`configs/project.json`
 | Inner CV | +5 | | |
 
 ## Çalıştırma sırası (Google Colab)
-1. Bu repoyu GitHub'a yükle. Colab'da her notebook'un ilk hücresindeki `GITHUB_REPO_URL` alanına repo adresini yaz.
+1. Notebook'ları Colab'da GitHub'dan aç. İlk hücre Google Drive'ı bağlar ve repoyu `MyDrive/YSA_odev/` altına klonlar. Üç notebook aynı klasörde çalıştığı için birinin ürettiği dosyaları diğeri görür.
 2. **`01_eda.ipynb`**: veri indirme ve doğrulama, kopya kontrolü, %80/%20 stratified bölünme (`results/dataset_split.csv`), development-only EDA ve hipotezler.
 3. **`02_nested_cv.ipynb`**:
    - A bölümünden sonra `configs/random_candidates.json` dosyasını **commit et** (adayların önceden kaydı).
@@ -30,7 +30,7 @@ Temel seed = öğrenci numarasının son 5 hanesi + 2026 (`configs/project.json`
    - Bitince **ayrı bir commit** at: *"Lock final model and unlabeled test predictions"*.
 4. **`03_final_test.ipynb`**: kilitli dosyanın SHA-256 doğrulaması, test metrikleri, bootstrap %95 GA, ROC/PR, confusion matrix, seed kararlılığı, hata analizi.
 
-Colab'da her notebook'un son hücresi `results/`, `figures/` ve `configs/` klasörlerini zip olarak indirir. Bunları repoya yükle.
+Üretilen `results/`, `figures/` ve `configs/` dosyaları Drive'daki klasörde durur. Bunları yerel repo klasörüne kopyalayıp GitHub Desktop ile commit et.
 Tüm eğitimler CPU'da yapılır (determinizm için). Bağlantı koparsa `02` yeniden çalıştırıldığında `results/cache/` sayesinde kaldığı yerden devam eder.
 
 ## Repo yapısı
