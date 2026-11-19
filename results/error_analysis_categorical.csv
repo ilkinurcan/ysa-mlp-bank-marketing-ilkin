@@ -1,0 +1,16 @@
+,,FN,FP,TN,TP
+poutcome,failure,0.224,0.182,0.097,0.071
+poutcome,nonexistent,0.75,0.182,0.899,0.071
+poutcome,success,0.026,0.636,0.004,0.857
+contact,cellular,0.882,1.0,0.613,0.857
+contact,telephone,0.118,0.0,0.387,0.143
+month,apr,0.092,0.0,0.055,0.214
+month,aug,0.158,0.273,0.156,0.071
+month,dec,0.026,0.091,0.003,0.071
+month,jul,0.132,0.091,0.169,0.0
+month,jun,0.171,0.0,0.127,0.0
+month,mar,0.026,0.182,0.007,0.214
+month,may,0.25,0.0,0.337,0.071
+month,nov,0.066,0.091,0.12,0.214
+month,oct,0.039,0.182,0.017,0.0
+month,sep,0.039,0.091,0.008,0.143

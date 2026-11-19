@@ -1,0 +1,5 @@
+seviye,AP,ROC_AUC
+"Outer CV (seçilen arama prosedürü, n=3)",0.4388 ± 0.0311,0.7629 ± 0.0082
+Development inner CV (R3),0.4492,-
+Bağımsız test (mlp_seed34106),0.3838,0.7552
+Bağımsız test (Logistic Regression),0.3587,0.7553
