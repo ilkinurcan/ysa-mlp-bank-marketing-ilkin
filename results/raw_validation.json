@@ -1,0 +1,14 @@
+{
+  "n_rows": 4119,
+  "n_rows_expected": 4119,
+  "n_columns": 21,
+  "columns_match": true,
+  "target_labels": [
+    "no",
+    "yes"
+  ],
+  "numeric_dtypes_ok": true,
+  "categorical_dtypes_ok": true,
+  "n_nan_cells": 0,
+  "all_ok": true
+}

@@ -1,0 +1,7 @@
+{
+  "exact_duplicate_rows_all_columns": 0,
+  "duplicate_rows_features_wo_duration": 20,
+  "duplicate_rows_features_wo_duration_plus_y": 19,
+  "groups_with_conflicting_labels": 1,
+  "n_unique_feature_groups": 4099
+}

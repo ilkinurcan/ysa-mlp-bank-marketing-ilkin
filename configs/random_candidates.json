@@ -1,0 +1,109 @@
+{
+  "random_search_seed": 34110,
+  "generated_at": "2026-11-19 19:10:28",
+  "sampler": "sklearn.model_selection.ParameterSampler (+ scipy.stats.loguniform for lr)",
+  "candidates": [
+    {
+      "id": "R1",
+      "optimizer": "sgd",
+      "hidden_layers": [
+        16
+      ],
+      "activation": "relu",
+      "lr": 0.0153563,
+      "weight_decay": 0.0,
+      "batch_size": 128,
+      "scaler": "robust",
+      "dropout": 0.0,
+      "clipping": true,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Random Search (sgd, örnek 1)"
+    },
+    {
+      "id": "R2",
+      "optimizer": "sgd",
+      "hidden_layers": [
+        16
+      ],
+      "activation": "tanh",
+      "lr": 0.0809114,
+      "weight_decay": 1e-05,
+      "batch_size": 32,
+      "scaler": "minmax",
+      "dropout": 0.0,
+      "clipping": true,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Random Search (sgd, örnek 2)"
+    },
+    {
+      "id": "R3",
+      "optimizer": "adam",
+      "hidden_layers": [
+        32
+      ],
+      "activation": "tanh",
+      "lr": 0.000205667,
+      "weight_decay": 1e-05,
+      "batch_size": 128,
+      "scaler": "standard",
+      "dropout": 0.0,
+      "clipping": false,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Random Search (adam, örnek 1)"
+    },
+    {
+      "id": "R4",
+      "optimizer": "adam",
+      "hidden_layers": [
+        64
+      ],
+      "activation": "relu",
+      "lr": 0.00858745,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "scaler": "minmax",
+      "dropout": 0.2,
+      "clipping": true,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Random Search (adam, örnek 2)"
+    },
+    {
+      "id": "R5",
+      "optimizer": "adamw",
+      "hidden_layers": [
+        32
+      ],
+      "activation": "tanh",
+      "lr": 0.000961743,
+      "weight_decay": 0.0,
+      "batch_size": 64,
+      "scaler": "robust",
+      "dropout": 0.2,
+      "clipping": false,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Random Search (adamw, örnek 1)"
+    },
+    {
+      "id": "R6",
+      "optimizer": "adamw",
+      "hidden_layers": [
+        16
+      ],
+      "activation": "tanh",
+      "lr": 0.000376282,
+      "weight_decay": 0.0,
+      "batch_size": 64,
+      "scaler": "minmax",
+      "dropout": 0.0,
+      "clipping": true,
+      "scheduler": true,
+      "cat_unknown": "category",
+      "purpose": "Random Search (adamw, örnek 2)"
+    }
+  ]
+}

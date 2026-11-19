@@ -1,0 +1,18 @@
+{
+  "python": "3.13.18",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "cpu_count": 2,
+  "numpy": "2.4.6",
+  "pandas": "2.2.3",
+  "sklearn": "1.6.1",
+  "scipy": "1.16.3",
+  "matplotlib": "3.10.0",
+  "torch": "2.14.1+cpu",
+  "joblib": "1.6.0",
+  "torch_cuda_available": false,
+  "torch_num_threads": 1,
+  "device_used": "cpu",
+  "cpu_model": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+  "mem_total": "13286924 kB"
+}

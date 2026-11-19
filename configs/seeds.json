@@ -1,0 +1,20 @@
+{
+  "student_id_last5": "32078",
+  "base_seed": 34104,
+  "python": 34104,
+  "numpy": 34105,
+  "torch": 34106,
+  "split": 34107,
+  "outer_cv": 34108,
+  "inner_cv": 34109,
+  "random_search": 34110,
+  "early_stop_split": 34111,
+  "bootstrap": 34112,
+  "logreg": 34113,
+  "stability_seeds": [
+    34106,
+    34205,
+    34306
+  ],
+  "primary_seed": 34106
+}

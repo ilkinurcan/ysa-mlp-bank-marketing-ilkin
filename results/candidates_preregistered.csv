@@ -1,0 +1,13 @@
+id,optimizer,hidden_layers,activation,lr,weight_decay,batch_size,scaler,dropout,clipping,scheduler,cat_unknown,purpose,search
+M1,adamw,"(32,)",relu,0.001,0.0001,64,standard,0.0,False,True,category,Temel manuel konfigürasyon,manual
+M2,adam,"(32,)",relu,0.001,0.0001,64,standard,0.0,False,True,category,Optimizer etkisi (AdamW -> Adam),manual
+M3,sgd,"(32,)",relu,0.001,0.0001,64,standard,0.0,False,True,category,Optimizer etkisi (AdamW -> SGD+Momentum 0.9),manual
+M4,adamw,"(32,)",relu,0.001,0.0001,64,minmax,0.0,False,True,category,Ölçekleme etkisi (Standard -> MinMax),manual
+M5,adamw,"(64, 32)",relu,0.001,0.0001,64,standard,0.0,False,True,category,"Mimari etkisi ((32,) -> (64,32))",manual
+M6,adamw,"(32,)",relu,0.001,0.0001,64,standard,0.0,False,False,category,Learning-rate-drop etkisi (scheduler kapalı),manual
+R1,sgd,"(16,)",relu,0.0153563,0.0,128,robust,0.0,True,True,category,"Random Search (sgd, örnek 1)",random
+R2,sgd,"(16,)",tanh,0.0809114,1e-05,32,minmax,0.0,True,True,category,"Random Search (sgd, örnek 2)",random
+R3,adam,"(32,)",tanh,0.000205667,1e-05,128,standard,0.0,False,True,category,"Random Search (adam, örnek 1)",random
+R4,adam,"(64,)",relu,0.00858745,0.0001,64,minmax,0.2,True,True,category,"Random Search (adam, örnek 2)",random
+R5,adamw,"(32,)",tanh,0.000961743,0.0,64,robust,0.2,False,True,category,"Random Search (adamw, örnek 1)",random
+R6,adamw,"(16,)",tanh,0.000376282,0.0,64,minmax,0.0,True,True,category,"Random Search (adamw, örnek 2)",random

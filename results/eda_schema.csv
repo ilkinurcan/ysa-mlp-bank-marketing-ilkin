@@ -1,0 +1,21 @@
+özellik,tip,dtype,benzersiz,NaN,unknown,özel kod,unknown_%
+age,sayısal,int64,65,0,0,,0.0
+job,kategorik,object,12,0,36,,1.09
+marital,kategorik,object,4,0,8,,0.24
+education,kategorik,object,8,0,130,,3.95
+default,kategorik,object,2,0,658,,19.97
+housing,kategorik,object,3,0,84,,2.55
+loan,kategorik,object,3,0,84,,2.55
+contact,kategorik,object,2,0,0,,0.0
+month,kategorik,object,10,0,0,,0.0
+day_of_week,kategorik,object,5,0,0,,0.0
+campaign,sayısal,int64,23,0,0,,0.0
+pdays,sayısal,int64,19,0,0,999 = önceden temas yok,0.0
+previous,sayısal,int64,7,0,0,,0.0
+poutcome,kategorik,object,3,0,0,,0.0
+emp.var.rate,sayısal,float64,10,0,0,,0.0
+cons.price.idx,sayısal,float64,26,0,0,,0.0
+cons.conf.idx,sayısal,float64,26,0,0,,0.0
+euribor3m,sayısal,float64,223,0,0,,0.0
+nr.employed,sayısal,float64,11,0,0,,0.0
+y,kategorik,object,2,0,0,,0.0
