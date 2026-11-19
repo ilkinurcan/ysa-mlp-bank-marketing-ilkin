@@ -1,0 +1,156 @@
+{
+  "decision": {
+    "rule": "Tam development üzerinde 3-fold inner CV; en yüksek mean AP (eşitlikte düşük SD, sonra manuel).",
+    "manual_best": "M2",
+    "manual_best_inner_AP_mean": 0.444888110049588,
+    "manual_best_inner_AP_sd": 0.1005431142891118,
+    "random_best": "R3",
+    "random_best_inner_AP_mean": 0.44919550385945484,
+    "random_best_inner_AP_sd": 0.09768041302654511,
+    "final_method": "random_search",
+    "final_candidate": "R3"
+  },
+  "final_config": {
+    "id": "R3",
+    "optimizer": "adam",
+    "hidden_layers": [
+      32
+    ],
+    "activation": "tanh",
+    "lr": 0.000205667,
+    "weight_decay": 1e-05,
+    "batch_size": 128,
+    "scaler": "standard",
+    "dropout": 0.0,
+    "clipping": false,
+    "scheduler": true,
+    "cat_unknown": "category",
+    "purpose": "Random Search (adam, örnek 1)"
+  },
+  "primary_model": "mlp_seed34106",
+  "primary_seed": 34106,
+  "stability_seeds": [
+    34106,
+    34205,
+    34306
+  ],
+  "threshold": 0.5,
+  "threshold_policy": "Sabit 0.50 (test veya outer sonuçlarına göre ayarlanmadı).",
+  "n_inputs_after_preprocessing": 62,
+  "n_trainable_params": 2049,
+  "param_breakdown": [
+    {
+      "in": 62,
+      "out": 32,
+      "params": 2016
+    },
+    {
+      "in": 32,
+      "out": 1,
+      "params": 33
+    }
+  ],
+  "early_stop_split": {
+    "n_fit": 2802,
+    "n_es": 493,
+    "seed": 34111
+  },
+  "training_config": {
+    "max_epochs": 150,
+    "early_stopping_patience": 15,
+    "early_stopping_min_delta": 0.0,
+    "early_stopping_monitor": "internal validation BCE loss (mode=min)",
+    "restore_best_weights": true,
+    "early_stop_fraction": 0.15,
+    "scheduler": {
+      "name": "ReduceLROnPlateau",
+      "mode": "min",
+      "factor": 0.5,
+      "patience": 5,
+      "min_lr": 1e-05
+    },
+    "sgd_momentum": 0.9,
+    "loss": "BCEWithLogitsLoss",
+    "hp_selection_metric": "average_precision_score (inner CV mean)",
+    "threshold": 0.5,
+    "n_outer_folds": 3,
+    "n_inner_folds": 3,
+    "device": "cpu"
+  },
+  "seeds": {
+    "student_id_last5": "32078",
+    "base_seed": 34104,
+    "python": 34104,
+    "numpy": 34105,
+    "torch": 34106,
+    "split": 34107,
+    "outer_cv": 34108,
+    "inner_cv": 34109,
+    "random_search": 34110,
+    "early_stop_split": 34111,
+    "bootstrap": 34112,
+    "logreg": 34113,
+    "stability_seeds": [
+      34106,
+      34205,
+      34306
+    ],
+    "primary_seed": 34106
+  },
+  "per_seed_training": [
+    {
+      "seed": 34106,
+      "is_primary": true,
+      "best_epoch": 59,
+      "stopped_epoch": 74,
+      "best_val_bce": 0.28396227955818176,
+      "stop_reason": "early_stopping",
+      "final_lr": 5.141675e-05,
+      "n_lr_reductions": 2,
+      "train_time_s": 5.587019089999785,
+      "n_params": 2049,
+      "n_fit": 2802,
+      "n_es": 493,
+      "warnings": ""
+    },
+    {
+      "seed": 34205,
+      "is_primary": false,
+      "best_epoch": 63,
+      "stopped_epoch": 78,
+      "best_val_bce": 0.28343549370765686,
+      "stop_reason": "early_stopping",
+      "final_lr": 5.141675e-05,
+      "n_lr_reductions": 2,
+      "train_time_s": 2.097737597999867,
+      "n_params": 2049,
+      "n_fit": 2802,
+      "n_es": 493,
+      "warnings": ""
+    },
+    {
+      "seed": 34306,
+      "is_primary": false,
+      "best_epoch": 69,
+      "stopped_epoch": 84,
+      "best_val_bce": 0.2849915623664856,
+      "stop_reason": "early_stopping",
+      "final_lr": 5.141675e-05,
+      "n_lr_reductions": 2,
+      "train_time_s": 2.2214512699999887,
+      "n_params": 2049,
+      "n_fit": 2802,
+      "n_es": 493,
+      "warnings": ""
+    }
+  ],
+  "logreg_reference": {
+    "C": 1.0,
+    "max_iter": 5000,
+    "preprocessing": "median + StandardScaler + OHE(unknown=kategori)",
+    "train_time_s": 0.09528018299988616,
+    "warnings": ""
+  },
+  "locked_predictions_sha256": "51472b11a0beef977334f5fc1f100ee7f41953d4d72924a66ac5807cc17d5f0d",
+  "created_at": "2026-11-19 19:37:51"
+}

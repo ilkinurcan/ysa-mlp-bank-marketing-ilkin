@@ -1,0 +1,11 @@
+{
+  "rule": "Tam development üzerinde 3-fold inner CV; en yüksek mean AP (eşitlikte düşük SD, sonra manuel).",
+  "manual_best": "M2",
+  "manual_best_inner_AP_mean": 0.444888110049588,
+  "manual_best_inner_AP_sd": 0.1005431142891118,
+  "random_best": "R3",
+  "random_best_inner_AP_mean": 0.44919550385945484,
+  "random_best_inner_AP_sd": 0.09768041302654511,
+  "final_method": "random_search",
+  "final_candidate": "R3"
+}

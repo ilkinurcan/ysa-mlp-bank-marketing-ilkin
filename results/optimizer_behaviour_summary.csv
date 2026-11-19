@@ -1,0 +1,4 @@
+optimizer,n_egitim,ort_AP,ort_sure_s,ort_best_epoch,ort_durulan_epoch,max_epoch_sayisi,ort_lr_dusurme
+adam,27,0.421,1.317,51.889,63.778,6,1.667
+adamw,54,0.419,1.659,37.907,52.667,2,1.796
+sgd,27,0.415,1.69,61.852,73.556,6,1.778

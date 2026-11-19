@@ -1,0 +1,15 @@
+context,candidate,inner_fold,stop_reason,warnings
+outer0,M3,0,max_epochs,max_epochs_reached_without_early_stop
+outer0,M3,1,max_epochs,max_epochs_reached_without_early_stop
+outer0,M3,2,max_epochs,max_epochs_reached_without_early_stop
+outer0,R3,0,max_epochs,max_epochs_reached_without_early_stop
+outer0,R3,1,max_epochs,max_epochs_reached_without_early_stop
+outer0,R3,2,max_epochs,max_epochs_reached_without_early_stop
+outer0,R6,1,max_epochs,max_epochs_reached_without_early_stop
+outer1,M3,2,max_epochs,max_epochs_reached_without_early_stop
+outer1,R3,2,max_epochs,max_epochs_reached_without_early_stop
+outer1,R6,2,max_epochs,max_epochs_reached_without_early_stop
+outer2,M3,0,max_epochs,max_epochs_reached_without_early_stop
+outer2,M3,1,max_epochs,max_epochs_reached_without_early_stop
+outer2,R3,0,max_epochs,max_epochs_reached_without_early_stop
+outer2,R3,1,max_epochs,max_epochs_reached_without_early_stop
