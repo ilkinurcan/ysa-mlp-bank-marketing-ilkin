@@ -3,6 +3,9 @@
 Yapay Sinir Ağları dersi — Yüksek Lisans Ara Sınav Projesi.
 UCI Bank Marketing (`bank-additional.csv`, 4.119 gözlem) üzerinde PyTorch MLP ile ikili sınıflandırma (`y = yes` → 1).
 
+**Hazırlayanlar:** Aslıhan Semiz Varlı (254329024), İlkin Urcan (244329078), Seda Erten (254312008), Süleyman Balsak (254312022)  
+**Ders sorumlusu:** Gökalp Tulum
+
 ## Veri seti
 - Kaynak: Moro, S., Rita, P. ve Cortez, P. (2014). *Bank Marketing*. UCI Machine Learning Repository. https://doi.org/10.24432/C5K306
 - Ham veri repoya yüklenmez. `01_eda.ipynb` resmî zip'i (`https://archive.ics.uci.edu/static/public/222/bank+marketing.zip`) indirir ve içinden **yalnızca** `bank-additional.csv` dosyasını `data/` klasörüne çıkarır.
@@ -10,7 +13,11 @@ UCI Bank Marketing (`bank-additional.csv`, 4.119 gözlem) üzerinde PyTorch MLP 
 - `duration` değişkeni görüşme öncesinde bilinmediği için tüm modellerden çıkarılmıştır.
 
 ## Seed politikası
-Temel seed = öğrenci numarasının son 5 hanesi + 2026 (`configs/project.json`). Alt seed'ler sabit ofsetlerle türetilir (`src/config.py → SEED_OFFSETS`) ve `configs/seeds.json` dosyasına yazılır:
+Temel seed = öğrenci numarasının son 5 hanesi + 2026 (`configs/project.json`).
+
+> **Not:** Seed, deneyleri yürüten grup üyesinin (İlkin Urcan) öğrenci numarasından türetilmiştir. Hesapta öğrenci numarasının (244329078) son beş hanesi olan 29078 yerine sehven **32078** kullanılmıştır (temel seed 34104). Ders sorumlusu bilgilendirilmiştir. Tüm deneyler bu seed ile tutarlı biçimde yürütülmüştür.
+
+Alt seed'ler sabit ofsetlerle türetilir (`src/config.py → SEED_OFFSETS`) ve `configs/seeds.json` dosyasına yazılır:
 
 | Amaç | Ofset | Amaç | Ofset |
 |---|---|---|---|
